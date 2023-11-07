@@ -25,7 +25,7 @@ class LottoServiceTest {
         LottoService lottoService = new LottoService(new PickNumStrategyImpl());
 
         assertThatIllegalArgumentException()
-                .isThrownBy(() -> lottoService.createLottos("2000"))
+                .isThrownBy(() -> lottoService.createLottos("2222"))
                 .withMessage("로또 구입 금액은 1000원 단위여야 합니다.");
     }
 }
